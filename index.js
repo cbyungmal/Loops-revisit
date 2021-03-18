@@ -20,7 +20,15 @@ evenPrint(13) => 2,4,6,8,10,12
 
 function evenPrint(number){
   //CODE BELOW HERE
-
+# list of numbers 
+list1 = [10, 21, 4, 45, 66, 93] 
+  
+# iterating each number in list 
+for num in list1: 
+      
+    # checking condition 
+    if num % 2 == 0: 
+       print(num, end = " ") 
 
   //CODE ABOVE HERE
 }
@@ -53,7 +61,14 @@ oddPrint(12) => 1,3,5,7,9,11
 
 function oddPrint(number){
   //CODE BELOW HERE
-
+start, end = 4, 19
+  
+# iterating each number in list 
+for num in range(start, end + 1): 
+      
+    # checking condition 
+    if num % 2 != 0: 
+        print(num, end = " ") 
 
   //CODE ABOVE HERE
 }
@@ -79,7 +94,24 @@ evenOdd(5) => even, odd, even, odd, even, odd
 
 function evenOdd(number){
   //CODE BELOW HERE
-
+{
+    int even_count = 0;
+    int odd_count = 0;
+    while (n > 0) 
+    {
+        int rem = n % 10;
+        if (rem % 2 == 0)
+            even_count++;
+        else
+            odd_count++;
+        n = n / 10;
+    }
+    if (even_count % 2 == 0 && 
+         odd_count % 2 != 0)
+        return 1;
+    else
+        return 0;
+}
 
   //CODE ABOVE HERE
 }
@@ -102,8 +134,8 @@ countUp(10) => 1,2,3,4,5,6,7,8,9,10
 
 function countUp(number){
   //CODE BELOW HERE
-
-
+if (n == 1) {
+  return 1;
   //CODE ABOVE HERE
 }
 
@@ -123,7 +155,6 @@ countDown(10) =>10,9,8,7,6,5,4,3,2,1
 
 function countDown(number){
   //CODE BELOW HERE
-
-
-  //CODE ABOVE HERE
+for (int i = N; i > 0; i--)
+ //CODE ABOVE HERE
 }
